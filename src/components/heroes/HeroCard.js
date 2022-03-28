@@ -7,7 +7,7 @@ export const HeroCard = ({ id, superhero, color }) => {
             <Link to={`/hero/${id}`}>
                 <div className='h-100'>
                     <img
-                        src={`/HeroikoApp/assets/heroes/${id}.png`} 
+                        src={`https://marcos-cabral.github.io/HeroikoApp/assets/heroes/${id}.png`} 
                         className="card-img h-100 img-card-hero"
                         alt={superhero} />
                 </div>
