@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    HashRouter,
+    BrowserRouter,
     Route,
     Routes,
 } from "react-router-dom";
@@ -11,12 +11,12 @@ export const AppRouter = () => {
 
     return (
         <div className="container-principal">
-            <HashRouter>
+            <BrowserRouter>
                 <Routes>
                     <Route exact="false" path="/login" element={<LoginScreen />} />
                     <Route path="*" element={<DashboardRoutes />} />
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         </div>
     )
 }
