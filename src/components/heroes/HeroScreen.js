@@ -45,7 +45,7 @@ export const HeroScreen = () => {
         <div >
           <Link to={publisher.includes('DC') ? `/dc` : `/marvel`} className='w-100 d-flex align-items-center justify-content-end'>
             <img src={`https://marcos-cabral.github.io/HeroikoApp/assets/heroes/${publisher}.png`}
-              alt={publisher}
+              alt={publisher} 
               className='w-50 h-50' style={{ objectFit: 'contain' }}></img>
           </Link>
         </div>
