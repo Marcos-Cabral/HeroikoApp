@@ -11,7 +11,7 @@ export const PrivateRoute = ({
     localStorage.setItem('lastPath', location.pathname);
     return isAuthenticated ?
         <Component />
-        : <Navigate to={process.env.PUBLIC_URL +"/login"} />
+        : <Navigate to="/login" />
 }
 
 PrivateRoute.propTypes = {

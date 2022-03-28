@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/HeroikoApp/static/css/main.a9365d86.css",
-    "main.js": "/HeroikoApp/static/js/main.1aac5a76.js",
+    "main.js": "/HeroikoApp/static/js/main.7053368a.js",
     "index.html": "/HeroikoApp/index.html",
     "main.a9365d86.css.map": "/HeroikoApp/static/css/main.a9365d86.css.map",
-    "main.1aac5a76.js.map": "/HeroikoApp/static/js/main.1aac5a76.js.map"
+    "main.7053368a.js.map": "/HeroikoApp/static/js/main.7053368a.js.map"
   },
   "entrypoints": [
     "static/css/main.a9365d86.css",
-    "static/js/main.1aac5a76.js"
+    "static/js/main.7053368a.js"
   ]
 }

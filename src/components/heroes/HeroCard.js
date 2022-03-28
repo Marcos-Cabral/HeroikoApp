@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 export const HeroCard = ({ id, superhero, color }) => {
     return (
         <div className='col-sm-6 col-md-6 col-lg-5 m-1 mb-2 hero-card' style={{ background: color }}>
-            <Link to={`${process.env.PUBLIC_URL}/hero/${id}`}>
+            <Link to={`/hero/${id}`}>
                 <div className='h-100'>
                     <img
-                        src={`${process.env.PUBLIC_URL}/assets/heroes/${id}.png`} 
+                        src={`/assets/heroes/${id}.png`} 
                         className="card-img h-100 img-card-hero"
                         alt={superhero} />
                 </div>

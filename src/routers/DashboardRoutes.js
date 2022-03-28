@@ -17,10 +17,10 @@ export const DashboardRoutes = () => {
         <>
             <Navbar />
             <Routes>
-                <Route exact path={process.env.PUBLIC_URL +"/marvel"} element={<PrivateRoute isAuthenticated={user.logged} component={MarvelScreen} />} />
-                <Route exact path={process.env.PUBLIC_URL + "/dc"} element={<PrivateRoute isAuthenticated={user.logged} component={DcScreen} />} />
-                <Route exact path={process.env.PUBLIC_URL +"/hero/:heroeId"} element={<PrivateRoute isAuthenticated={user.logged} component={HeroScreen} />} />
-                <Route exact path={process.env.PUBLIC_URL +"/search"} element={<PrivateRoute isAuthenticated={user.logged} component={SearchScreen} />} />
+                <Route exact path="/marvel" element={<PrivateRoute isAuthenticated={user.logged} component={MarvelScreen} />} />
+                <Route exact path= "/dc" element={<PrivateRoute isAuthenticated={user.logged} component={DcScreen} />} />
+                <Route exact path="/hero/:heroeId" element={<PrivateRoute isAuthenticated={user.logged} component={HeroScreen} />} />
+                <Route exact path="/search" element={<PrivateRoute isAuthenticated={user.logged} component={SearchScreen} />} />
                 <Route path="*" element={<PrivateRoute isAuthenticated={user.logged} component={MarvelScreen} />} />
             </Routes>
         </>

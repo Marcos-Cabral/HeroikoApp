@@ -13,14 +13,14 @@ export const Navbar = () => {
     dispatch({
       type: types.logout
     });
-    navigate('https://marcos-cabral.github.io/HeroikoApp/login', { replace: true });
+    navigate('/login', { replace: true });
   }
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <NavLink
         className="navbar-brand"
-        to={`${process.env.PUBLIC_URL}/marvel`}
+        to={`/marvel`}
       >
         Heroiko 🦸‍♀️
       </NavLink>
@@ -30,17 +30,17 @@ export const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <NavLink to={`${process.env.PUBLIC_URL}/search`} className="nav-link">
+            <NavLink to={`/search`} className="nav-link">
               Search
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to={`${process.env.PUBLIC_URL}/marvel`} className="nav-link">
+            <NavLink to={`/marvel`} className="nav-link">
               Marvel
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to={`${process.env.PUBLIC_URL}/dc`} className="nav-link">
+            <NavLink to={`/dc`} className="nav-link">
               DC
             </NavLink>
           </li>
