@@ -11,7 +11,7 @@ export const PrivateRoute = ({
     localStorage.setItem('lastPath', location.pathname);
     return isAuthenticated ?
         <Component />
-        : <Navigate to="/HeroikoApp/login" />
+        : <Navigate to="https://marcos-cabral.github.io/HeroikoApp/login" />
 }
 
 PrivateRoute.propTypes = {
