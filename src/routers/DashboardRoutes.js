@@ -17,10 +17,10 @@ export const DashboardRoutes = () => {
         <>
             <Navbar />
             <Routes>
-                <Route exact path="https://marcos-cabral.github.io/HeroikoApp/marvel" element={<PrivateRoute isAuthenticated={user.logged} component={MarvelScreen} />} />
-                <Route exact path="https://marcos-cabral.github.io/HeroikoApp/dc" element={<PrivateRoute isAuthenticated={user.logged} component={DcScreen} />} />
-                <Route exact path="https://marcos-cabral.github.io/HeroikoApp/hero/:heroeId" element={<PrivateRoute isAuthenticated={user.logged} component={HeroScreen} />} />
-                <Route exact path="https://marcos-cabral.github.io/HeroikoApp/search" element={<PrivateRoute isAuthenticated={user.logged} component={SearchScreen} />} />
+                <Route exact path="/HeroikoApp/marvel" element={<PrivateRoute isAuthenticated={user.logged} component={MarvelScreen} />} />
+                <Route exact path="/HeroikoApp/dc" element={<PrivateRoute isAuthenticated={user.logged} component={DcScreen} />} />
+                <Route exact path="/HeroikoApp/hero/:heroeId" element={<PrivateRoute isAuthenticated={user.logged} component={HeroScreen} />} />
+                <Route exact path="/HeroikoApp/search" element={<PrivateRoute isAuthenticated={user.logged} component={SearchScreen} />} />
                 <Route path="*" element={<PrivateRoute isAuthenticated={user.logged} component={MarvelScreen} />} />
             </Routes>
         </>

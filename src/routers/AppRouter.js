@@ -13,7 +13,7 @@ export const AppRouter = () => {
         <div className="container-principal">
             <BrowserRouter>
                 <Routes>
-                    <Route exact="false" path="https://marcos-cabral.github.io/HeroikoApp/login" element={<LoginScreen />} />
+                    <Route exact="false" path="/HeroikoApp/login" element={<LoginScreen />} />
                     <Route path="*" element={<DashboardRoutes />} />
                 </Routes>
             </BrowserRouter>

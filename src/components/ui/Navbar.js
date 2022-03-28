@@ -20,7 +20,7 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <NavLink
         className="navbar-brand"
-        to="/"
+        to="/HeroikoApp/"
       >
         Heroiko 🦸‍♀️
       </NavLink>
@@ -30,17 +30,17 @@ export const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <NavLink to={"https://marcos-cabral.github.io/HeroikoApp/search"} className="nav-link">
+            <NavLink to={"/HeroikoApp/search"} className="nav-link">
               Search
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to={"https://marcos-cabral.github.io/HeroikoApp/marvel"} className="nav-link">
+            <NavLink to={"/HeroikoApp/marvel"} className="nav-link">
               Marvel
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to={"https://marcos-cabral.github.io/HeroikoApp/dc"} className="nav-link">
+            <NavLink to={"/HeroikoApp/dc"} className="nav-link">
               DC
             </NavLink>
           </li>
