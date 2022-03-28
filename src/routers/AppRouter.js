@@ -11,9 +11,9 @@ export const AppRouter = () => {
 
     return (
         <div className="container-principal">
-            <HashRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter>
                 <Routes>
-                    <Route exact="false" path="login" element={<LoginScreen />} />
+                    <Route exact="false" path="/login" element={<LoginScreen />} />
                     <Route path="*" element={<DashboardRoutes />} />
                 </Routes>
             </HashRouter>
