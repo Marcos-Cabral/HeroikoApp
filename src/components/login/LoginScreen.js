@@ -18,7 +18,7 @@ export const LoginScreen = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const lastPath = localStorage.getItem('lastPath') || '/';
+    const lastPath = localStorage.getItem('lastPath') || 'https://marcos-cabral.github.io/HeroikoApp/';
     dispatch({
       type: types.login,
       payload: {

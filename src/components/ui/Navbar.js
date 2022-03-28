@@ -9,11 +9,11 @@ export const Navbar = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    //localStorage.removeItem('user')
+
     dispatch({
       type: types.logout
     });
-    navigate('/login', { replace: true });
+    navigate('https://marcos-cabral.github.io/HeroikoApp/login', { replace: true });
   }
 
   return (
@@ -30,17 +30,17 @@ export const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <NavLink to={"/search"} className="nav-link">
+            <NavLink to={"https://marcos-cabral.github.io/HeroikoApp/search"} className="nav-link">
               Search
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to={"/marvel"} className="nav-link">
+            <NavLink to={"https://marcos-cabral.github.io/HeroikoApp/marvel"} className="nav-link">
               Marvel
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to={"/dc"} className="nav-link">
+            <NavLink to={"https://marcos-cabral.github.io/HeroikoApp/dc"} className="nav-link">
               DC
             </NavLink>
           </li>

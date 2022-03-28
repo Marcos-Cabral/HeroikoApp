@@ -10,7 +10,6 @@ import { DcScreen } from '../components/dc/DcScreen';
 import { SearchScreen } from '../components/search/SearchScreen';
 import { PrivateRoute } from './PrivateRoute';
 import { AuthContext } from '../auth/AuthContext';
-import { LoginScreen } from '../components/login/LoginScreen';
 
 export const DashboardRoutes = () => {
     const { user } = useContext(AuthContext);
@@ -18,10 +17,10 @@ export const DashboardRoutes = () => {
         <>
             <Navbar />
             <Routes>
-                <Route exact path="/marvel" element={<PrivateRoute isAuthenticated={user.logged} component={MarvelScreen} />} />
-                <Route exact path="/dc" element={<PrivateRoute isAuthenticated={user.logged} component={DcScreen} />} />
-                <Route exact path="/hero/:heroeId" element={<PrivateRoute isAuthenticated={user.logged} component={HeroScreen} />} />
-                <Route exact path="/search" element={<PrivateRoute isAuthenticated={user.logged} component={SearchScreen} />} />
+                <Route exact path="https://marcos-cabral.github.io/HeroikoApp/marvel" element={<PrivateRoute isAuthenticated={user.logged} component={MarvelScreen} />} />
+                <Route exact path="https://marcos-cabral.github.io/HeroikoApp/dc" element={<PrivateRoute isAuthenticated={user.logged} component={DcScreen} />} />
+                <Route exact path="https://marcos-cabral.github.io/HeroikoApp/hero/:heroeId" element={<PrivateRoute isAuthenticated={user.logged} component={HeroScreen} />} />
+                <Route exact path="https://marcos-cabral.github.io/HeroikoApp/search" element={<PrivateRoute isAuthenticated={user.logged} component={SearchScreen} />} />
                 <Route path="*" element={<PrivateRoute isAuthenticated={user.logged} component={MarvelScreen} />} />
             </Routes>
         </>
