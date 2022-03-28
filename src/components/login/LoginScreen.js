@@ -18,7 +18,7 @@ export const LoginScreen = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const lastPath = localStorage.getItem('lastPath') || '/HeroikoApp/';
+    const lastPath = localStorage.getItem('lastPath') || `${process.env.PUBLIC_URL}/HeroikoApp/`;
     dispatch({
       type: types.login,
       payload: {
