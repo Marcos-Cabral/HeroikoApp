@@ -21,7 +21,7 @@ export const HeroScreen = () => {
         <button className='btn font-weight-bold hero-screen-btn-back' onClick={handleClickReturn} > {"<"} </button>
         <div className='w-100 hero-screen-container-image' style={{ backgroundColor: color }}>
           <img
-            src={`/assets/heroes/${heroeId}.png`}
+            src={`https://marcos-cabral.github.io/HeroikoApp/assets/heroes/${heroeId}.png`}
             className="card-img w-100 h-100 hero-image-filter"
             alt={superhero} />
         </div>
@@ -44,7 +44,7 @@ export const HeroScreen = () => {
         }
         <div >
           <Link to={publisher.includes('DC') ? `/dc` : `/marvel`} className='w-100 d-flex align-items-center justify-content-end'>
-            <img src={`/assets/heroes/${publisher}.png`}
+            <img src={`https://marcos-cabral.github.io/HeroikoApp/assets/heroes/${publisher}.png`}
               alt={publisher}
               className='w-50 h-50' style={{ objectFit: 'contain' }}></img>
           </Link>
